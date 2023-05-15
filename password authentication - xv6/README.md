@@ -1,0 +1,2 @@
+## Notice
+Making xv6 a "secure" OS. Note that if a user has access to the filesystem image, it would be very easy to modify files in order to give them access to the OS. This could be done by either modifying the hash file, or the password file itself, allowing them to set a new password. In addition, the random number generator itself is based off of the current time, which in combination with the hash, allows for salts to be very predictable.
